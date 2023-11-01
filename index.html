@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fa13cd5308.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#projek">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p></p>
+          <h1>Hi, I'm <span>Anindia Aulia</span><br /></h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/about.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>
+              I am a student at SMKN 4 Tangerang majoring in software
+              engineering, I am 16 years old, I have good communication skills
+              and am responsible. I have skills in graphic design and IT support
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Junior Graphic Designer</span><br />Design Poster and
+                  Animation
+                </li>
+                <li><span>Web Development</span><br />Web/App Interfaces</li>
+                <li>
+                  <span>IT Support</span><br />Problem Solving and Service
+                  Computer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2014-2019</span><br />SDN Jurumudi 3</li>
+                <li><span>2019-2022</span><br />MTsN 3 Tangerang</li>
+                <li><span>2022-2025</span><br />SMKN 4 Tangerang</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service -->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-tittle2">My Service</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Design Poster</h2>
+            <p>I often make posters for certain events and assignments</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I am able to create websites and master the HTML programming
+              language, CSS, and JAVASCRIPT. As well as mastering the bootstrap
+              framework
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>IT Support</h2>
+            <p>
+              I can service and disassemble the PC, and find out problem in PC
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- projek -->
+    <div id="projek">
+      <div class="container">
+        <div class="sub-tittle3">My Project</div>
+        <div class="projek-list">
+          <div class="projek1">
+            <img src="img/projek2.png" />
+            <div class="layer">
+              <h3>Website</h3>
+              <p>Projek Website Jual Beli dan Kredit Rumah</p>
+            </div>
+          </div>
+          <div class="projek1">
+            <img src="img/projek3.jpg" />
+            <div class="layer">
+              <h3>Service PC</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="projek1">
+            <img src="img/projek1.png" />
+            <div class="layer">
+              <h3>Website</h3>
+              <p>Website Rekayasa Perangkat Lunak</p>
+            </div>
+          </div>
+          <div class="projek1">
+            <img src="img/ROHIS.jpg" />
+            <div class="layer">
+              <h3>Poster</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--experience-->
+    <div id="experience">
+      <div class="container">
+        <h1 class="sub-tittle5">My Certificate</h1>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide d-flex justify-content-center"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/sertif-mtk.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sertif-ukbi.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sertif-mts.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-tittle4">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>anindiaaulia4@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>088211078352</p>
+            <div class="social-icon">
+              <a href="https://instagram.com/annwy._?igshid=MzMyNGUyNmU2YQ=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/AnindiaKece?tab=overview&from=2023-09-01&to=2023-09-30"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Nama" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @anindia 2023</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwZooC58XxKIRM4kMaWXrHnCsfeQsFzallBfSejqkFADLP2WeVE4jexYtAyPDJc03z6JQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent succesfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
